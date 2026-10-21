@@ -1,0 +1,218 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="NFb372H39xY5UR1nbZxE">
+    <mxGraphModel dx="1414" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\ntitle OA业务流程之用车申请业务流程图\n\n|学校管理员|\nstart\n:基础设置;\nnote right\n  1、车辆信息\n  2、司机信息\nend note\n:查看用车申请;\nnote right\n  1、查看申请记录\n  2、查看具体车辆使用记录\nend note\n\n|发起人|\n:发起申请 (手机、pc);\nnote right\n  流程完结前，可撤销申请\nend note\n\n|审批人|\n:收到待审提醒 (手机);\n:审批用车申请 (手机、pc);\nnote right\n  1、安排车辆、司机\n  2、审批操作\nend note\n\n|抄送人|\n:抄送信息提醒 (手机);\n:查看申请详情 (手机、pc);\n\n|发起人|\n:审批完结信息提醒 (手机);\n\nstop\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="WTwlDJaPoqNfylZ-JcCu-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="学校管理员" plantUmlId="lane_35" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=none;swimlaneFillColor=none;strokeColor=#181818;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;" plantUmlBaseValue="学校管理员" id="WTwlDJaPoqNfylZ-JcCu-2">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="swimlane;collapsible=0;startSize=30;fillColor=none;swimlaneFillColor=none;strokeColor=#181818;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;" vertex="1">
+            <mxGeometry height="551" width="295" x="30" y="64" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="发起人" plantUmlId="lane_36" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=none;swimlaneFillColor=none;strokeColor=#181818;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;" plantUmlBaseValue="发起人" id="WTwlDJaPoqNfylZ-JcCu-3">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="swimlane;collapsible=0;startSize=30;fillColor=none;swimlaneFillColor=none;strokeColor=#181818;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;" vertex="1">
+            <mxGeometry height="551" width="335.5" x="325" y="64" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="审批人" plantUmlId="lane_37" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=none;swimlaneFillColor=none;strokeColor=#181818;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;" plantUmlBaseValue="审批人" id="WTwlDJaPoqNfylZ-JcCu-4">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="swimlane;collapsible=0;startSize=30;fillColor=none;swimlaneFillColor=none;strokeColor=#181818;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;" vertex="1">
+            <mxGeometry height="551" width="317" x="660.5" y="64" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="抄送人" plantUmlId="lane_38" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=none;swimlaneFillColor=none;strokeColor=#181818;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;" plantUmlBaseValue="抄送人" id="WTwlDJaPoqNfylZ-JcCu-5">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="swimlane;collapsible=0;startSize=30;fillColor=none;swimlaneFillColor=none;strokeColor=#181818;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;" vertex="1">
+            <mxGeometry height="551" width="163" x="977.5" y="64" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="start_0" plantUmlBaseStyle="ellipse;fillColor=#222222;strokeColor=#222222;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-6">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="ellipse;fillColor=#222222;strokeColor=#222222;" vertex="1">
+            <mxGeometry height="20" width="20" x="72" y="94" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_1" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-7">
+          <mxCell edge="1" parent="WTwlDJaPoqNfylZ-JcCu-1" source="WTwlDJaPoqNfylZ-JcCu-6" style="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="WTwlDJaPoqNfylZ-JcCu-8">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="82" y="114" as="sourcePoint" />
+              <mxPoint x="82" y="138" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="基础设置" plantUmlId="action_2" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" plantUmlBaseValue="基础设置" id="WTwlDJaPoqNfylZ-JcCu-8">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" vertex="1">
+            <mxGeometry height="34" width="68" x="48" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="noteptr_4" plantUmlBaseStyle="triangle;direction=west;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-9">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="triangle;direction=west;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="8" width="21" x="116" y="151" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="1、车辆信息&#xa;2、司机信息" plantUmlId="note_3" plantUmlBaseStyle="shape=note;size=10;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;fontSize=13;fontColor=#000000;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=4;" plantUmlBaseValue="1、车辆信息&#xa;2、司机信息" id="WTwlDJaPoqNfylZ-JcCu-10">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="shape=note;size=10;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;fontSize=13;fontColor=#000000;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=4;" vertex="1">
+            <mxGeometry height="41" width="94" x="136" y="134" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_5" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-11">
+          <mxCell edge="1" parent="WTwlDJaPoqNfylZ-JcCu-1" source="WTwlDJaPoqNfylZ-JcCu-8" style="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="WTwlDJaPoqNfylZ-JcCu-12">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="82" y="172" as="sourcePoint" />
+              <mxPoint x="82" y="199" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="查看用车申请" plantUmlId="action_6" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" plantUmlBaseValue="查看用车申请" id="WTwlDJaPoqNfylZ-JcCu-12">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" vertex="1">
+            <mxGeometry height="34" width="92" x="36" y="199" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="noteptr_8" plantUmlBaseStyle="triangle;direction=west;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-13">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="triangle;direction=west;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="8" width="21" x="128" y="212" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="1、查看申请记录&#xa;2、查看具体车辆使用记录" plantUmlId="note_7" plantUmlBaseStyle="shape=note;size=10;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;fontSize=13;fontColor=#000000;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=4;" plantUmlBaseValue="1、查看申请记录&#xa;2、查看具体车辆使用记录" id="WTwlDJaPoqNfylZ-JcCu-14">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="shape=note;size=10;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;fontSize=13;fontColor=#000000;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=4;" vertex="1">
+            <mxGeometry height="41" width="172" x="148" y="195" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_9" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-15">
+          <mxCell edge="1" parent="WTwlDJaPoqNfylZ-JcCu-1" source="WTwlDJaPoqNfylZ-JcCu-12" style="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="WTwlDJaPoqNfylZ-JcCu-16">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="82" y="241" />
+                <mxPoint x="407" y="241" />
+              </Array>
+              <mxPoint x="82" y="233" as="sourcePoint" />
+              <mxPoint x="407" y="256" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="发起申请 (手机、pc)" plantUmlId="action_12" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" plantUmlBaseValue="发起申请 (手机、pc)" id="WTwlDJaPoqNfylZ-JcCu-16">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" vertex="1">
+            <mxGeometry height="34" width="129" x="342.5" y="256" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="noteptr_14" plantUmlBaseStyle="triangle;direction=west;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-17">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="triangle;direction=west;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="8" width="21" x="471.5" y="270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="流程完结前，可撤销申请" plantUmlId="note_13" plantUmlBaseStyle="shape=note;size=10;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;fontSize=13;fontColor=#000000;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=4;" plantUmlBaseValue="流程完结前，可撤销申请" id="WTwlDJaPoqNfylZ-JcCu-18">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="shape=note;size=10;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;fontSize=13;fontColor=#000000;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=4;" vertex="1">
+            <mxGeometry height="25" width="164" x="491.5" y="261" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_15" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-19">
+          <mxCell edge="1" parent="WTwlDJaPoqNfylZ-JcCu-1" source="WTwlDJaPoqNfylZ-JcCu-16" style="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="WTwlDJaPoqNfylZ-JcCu-20">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="407" y="295" />
+                <mxPoint x="743" y="295" />
+              </Array>
+              <mxPoint x="407" y="290" as="sourcePoint" />
+              <mxPoint x="743" y="310" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="收到待审提醒 (手机)" plantUmlId="action_18" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" plantUmlBaseValue="收到待审提醒 (手机)" id="WTwlDJaPoqNfylZ-JcCu-20">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" vertex="1">
+            <mxGeometry height="34" width="128" x="679" y="310" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_19" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-21">
+          <mxCell edge="1" parent="WTwlDJaPoqNfylZ-JcCu-1" source="WTwlDJaPoqNfylZ-JcCu-20" style="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="WTwlDJaPoqNfylZ-JcCu-22">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="743" y="344" as="sourcePoint" />
+              <mxPoint x="743" y="368" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="审批用车申请 (手机、pc)" plantUmlId="action_20" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" plantUmlBaseValue="审批用车申请 (手机、pc)" id="WTwlDJaPoqNfylZ-JcCu-22">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" vertex="1">
+            <mxGeometry height="34" width="153" x="666.5" y="368" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="noteptr_22" plantUmlBaseStyle="triangle;direction=west;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-23">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="triangle;direction=west;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="8" width="21" x="819.5" y="381" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="1、安排车辆、司机&#xa;2、审批操作" plantUmlId="note_21" plantUmlBaseStyle="shape=note;size=10;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;fontSize=13;fontColor=#000000;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=4;" plantUmlBaseValue="1、安排车辆、司机&#xa;2、审批操作" id="WTwlDJaPoqNfylZ-JcCu-24">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="shape=note;size=10;fillColor=#FEFFDD;strokeColor=#181818;strokeWidth=0.5;fontSize=13;fontColor=#000000;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=4;" vertex="1">
+            <mxGeometry height="41" width="133" x="839.5" y="364" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_23" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-25">
+          <mxCell edge="1" parent="WTwlDJaPoqNfylZ-JcCu-1" source="WTwlDJaPoqNfylZ-JcCu-22" style="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="WTwlDJaPoqNfylZ-JcCu-26">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="743" y="410" />
+                <mxPoint x="1060" y="410" />
+              </Array>
+              <mxPoint x="743" y="402" as="sourcePoint" />
+              <mxPoint x="1060" y="425" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="抄送信息提醒 (手机)" plantUmlId="action_26" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" plantUmlBaseValue="抄送信息提醒 (手机)" id="WTwlDJaPoqNfylZ-JcCu-26">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" vertex="1">
+            <mxGeometry height="34" width="128" x="996" y="425" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_27" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-27">
+          <mxCell edge="1" parent="WTwlDJaPoqNfylZ-JcCu-1" source="WTwlDJaPoqNfylZ-JcCu-26" style="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="WTwlDJaPoqNfylZ-JcCu-28">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="1060" y="459" as="sourcePoint" />
+              <mxPoint x="1060" y="479" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="查看申请详情 (手机、pc)" plantUmlId="action_28" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" plantUmlBaseValue="查看申请详情 (手机、pc)" id="WTwlDJaPoqNfylZ-JcCu-28">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" vertex="1">
+            <mxGeometry height="34" width="153" x="983.5" y="479" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_29" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-29">
+          <mxCell edge="1" parent="WTwlDJaPoqNfylZ-JcCu-1" source="WTwlDJaPoqNfylZ-JcCu-28" style="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="WTwlDJaPoqNfylZ-JcCu-30">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1060" y="518" />
+                <mxPoint x="407" y="518" />
+              </Array>
+              <mxPoint x="1060" y="513" as="sourcePoint" />
+              <mxPoint x="407" y="533" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="审批完结信息提醒 (手机)" plantUmlId="action_32" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" plantUmlBaseValue="审批完结信息提醒 (手机)" id="WTwlDJaPoqNfylZ-JcCu-30">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;" vertex="1">
+            <mxGeometry height="34" width="152" x="331" y="533" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_33" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-31">
+          <mxCell edge="1" parent="WTwlDJaPoqNfylZ-JcCu-1" source="WTwlDJaPoqNfylZ-JcCu-30" style="endArrow=classic;endSize=8;strokeColor=#181818;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="WTwlDJaPoqNfylZ-JcCu-32">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="407" y="567" as="sourcePoint" />
+              <mxPoint x="407" y="587" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="stop_34" plantUmlBaseStyle="ellipse;shape=endState;fillColor=#222222;strokeColor=#222222;" plantUmlBaseValue="" id="WTwlDJaPoqNfylZ-JcCu-32">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="ellipse;shape=endState;fillColor=#222222;strokeColor=#222222;" vertex="1">
+            <mxGeometry height="22" width="22" x="396" y="587" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="OA业务流程之用车申请业务流程图" plantUmlId="title_0" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;whiteSpace=wrap;" plantUmlBaseValue="OA业务流程之用车申请业务流程图" id="WTwlDJaPoqNfylZ-JcCu-33">
+          <mxCell parent="WTwlDJaPoqNfylZ-JcCu-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="24" width="228" x="471.25" y="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
