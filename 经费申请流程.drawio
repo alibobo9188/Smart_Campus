@@ -1,391 +1,304 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="jyEtjb8Ubs8rXz05HmaF">
-    <mxGraphModel dx="1704" dy="918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2049" dy="1104" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\n&#39; ================= 样式设置：尽可能贴近截图 =================\nskinparam defaultFontName \&quot;Microsoft YaHei\&quot;, sans-serif\nskinparam shadowing false\nskinparam ActivityShape rectangle &#39; 取消圆角，变成方框\nskinparam ActivityBackgroundColor #FFFFFF &#39; 白色背景\nskinparam ActivityBorderColor #999999 &#39; 灰色边框\nskinparam ArrowColor #FF00FF &#39; 粉色连线\nskinparam ArrowStyle dashed &#39; 虚线\nskinparam linetype ortho &#39; 直角折线\nskinparam SwimlaneBorderColor #999999\nskinparam SwimlaneTitleBackgroundColor #F5F5F5\nskinparam ActivityTextAlignment left &#39; 文字左对齐\nskinparam defaultTextAlignment left\n\n&#39; ================= 泳道定义 (从左到右) =================\n|运营人员|\n|学校管理员|\n|科室负责人|\n|项目负责人|\n|主管领导|\n|申请人|\n|审批人|\n|抄送人|\n\n&#39; ================= 流程逻辑 =================\n|学校管理员|\nstart\n:授权经费管理给科室负责人;\n\n|运营人员|\n:二次验证授权;\n\n|科室负责人|\n:基础设置：\\n1、设置项目类型、分类\\n2、设置经费用途\\n3、设置审批流程;\n\n&#39; 为了视觉上让“项目负责人”和“主管领导”处于上方并横向指向“查看详情”，先定义它们的动作\n|项目负责人|\n:查看自己负责项目的总额、\\n剩余经费等情况;\n\n|主管领导|\n:查看所有项目的总额、剩余\\n经费等情况;\n\n|科室负责人|\n:查看经费详情：\\n1、经费实时数据（总额、\\n授权、支出、剩余等）\\n2、各部门申请统计\\n3、每笔申请详情;\n\n|科室负责人|\n:发布经费项目：\\n1、项目内容\\n2、填报指南;\n\n|申请人|\n:查看所在部门可申请的经费\\n项目（手机、pc）;\n:发起经费申请（手机、pc）;\n\n|审批人|\n:收到待审提醒（手机）;\n:审批经费申请（手机、pc）\\n支持上级审批、项目负责人\\n审批、职位审批、跨校审批\\n等，可按申请金额做条件审\\n批;\n\n&#39; 使用 fork 处理审批完成后的两个横向分支\nfork\n    |申请人|\n    :审批完结信息提醒（手机）;\n    |科室负责人|\n    :查看经费详情：\\n1、经费实时数据（总额、\\n授权、支出、剩余等）\\n2、各部门申请统计\\n3、每笔申请详情;\nfork again\n    |抄送人|\n    :抄送信息提醒（手机）;\n    :查看申请详情（手机、pc）;\nend fork\n\n&#39; 后续报销流程\n|科室负责人|\n:催办报错（系统、手动）;\n\n|申请人|\n:收到报销提醒（手机）;\n:经费报销（手机、pc）;\n\n|科室负责人|\n:审核报销;\n:下拨年度项目统计列表;\n\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="sFqfqWGMiwIP8Z_fvze0-217">
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\n&#39; ================= 样式设置：尽可能贴近截图 =================\nskinparam defaultFontName \&quot;Microsoft YaHei\&quot;, sans-serif\nskinparam shadowing false\nskinparam ActivityShape rectangle &#39; 取消圆角，变成方框\nskinparam ActivityBackgroundColor #FFFFFF &#39; 白色背景\nskinparam ActivityBorderColor #999999 &#39; 灰色边框\nskinparam ArrowColor #FF00FF &#39; 粉色连线\nskinparam ArrowStyle dashed &#39; 虚线\nskinparam linetype ortho &#39; 直角折线\nskinparam SwimlaneBorderColor #999999\nskinparam SwimlaneTitleBackgroundColor #F5F5F5\nskinparam ActivityTextAlignment left &#39; 文字左对齐\nskinparam defaultTextAlignment left\n\n&#39; ================= 泳道定义 (从左到右) =================\n|运营人员|\n|学校管理员|\n|科室负责人|\n|项目负责人|\n|主管领导|\n|申请人|\n|审批人|\n|抄送人|\n\n&#39; ================= 流程逻辑 =================\n|学校管理员|\nstart\n:授权经费管理给科室负责人;\n\n|运营人员|\n:二次验证授权;\n\n|科室负责人|\n:基础设置：\\n1、设置项目类型、分类\\n2、设置经费用途\\n3、设置审批流程;\n\n&#39; 为了视觉上让“项目负责人”和“主管领导”处于上方并横向指向“查看详情”，先定义它们的动作\n|项目负责人|\n:查看自己负责项目的总额、\\n剩余经费等情况;\n\n|主管领导|\n:查看所有项目的总额、剩余\\n经费等情况;\n\n|科室负责人|\n:查看经费详情：\\n1、经费实时数据（总额、\\n授权、支出、剩余等）\\n2、各部门申请统计\\n3、每笔申请详情;\n\n|科室负责人|\n:发布经费项目：\\n1、项目内容\\n2、填报指南;\n\n|申请人|\n:查看所在部门可申请的经费\\n项目（手机、pc）;\n:发起经费申请（手机、pc）;\n\n|审批人|\n:收到待审提醒（手机）;\n:审批经费申请（手机、pc）\\n支持上级审批、项目负责人\\n审批、职位审批、跨校审批\\n等，可按申请金额做条件审\\n批;\n\n&#39; 使用 fork 处理审批完成后的两个横向分支\nfork\n    |申请人|\n    :审批完结信息提醒（手机）;\n    |科室负责人|\n    :查看经费详情：\\n1、经费实时数据（总额、\\n授权、支出、剩余等）\\n2、各部门申请统计\\n3、每笔申请详情;\nfork again\n    |抄送人|\n    :抄送信息提醒（手机）;\n    :查看申请详情（手机、pc）;\nend fork\n\n&#39; 后续报销流程\n|科室负责人|\n:催办报错（系统、手动）;\n\n|申请人|\n:收到报销提醒（手机）;\n:经费报销（手机、pc）;\n\n|科室负责人|\n:审核报销;\n:下拨年度项目统计列表;\n\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="W4xpJ0Qu_Z-2tSzxhBI2-1">
           <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
             <mxGeometry as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="运营人员" plantUmlId="lane_78" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="运营人员" id="sFqfqWGMiwIP8Z_fvze0-218">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
-            <mxGeometry height="1379" width="102" x="30" y="30" as="geometry" />
+        <UserObject label="运营人员" plantUmlId="lane_78" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="运营人员" id="W4xpJ0Qu_Z-2tSzxhBI2-2">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
+            <mxGeometry height="1050" width="102" x="440" y="230" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="学校管理员" plantUmlId="lane_79" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="学校管理员" id="sFqfqWGMiwIP8Z_fvze0-219">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
-            <mxGeometry height="1379" width="174" x="132" y="30" as="geometry" />
+        <UserObject label="学校管理员" plantUmlId="lane_79" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="学校管理员" id="W4xpJ0Qu_Z-2tSzxhBI2-3">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
+            <mxGeometry height="1050" width="174" x="542" y="230" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="科室负责人" plantUmlId="lane_80" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="科室负责人" id="sFqfqWGMiwIP8Z_fvze0-220">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
-            <mxGeometry height="1379" width="170" x="306" y="30" as="geometry" />
+        <UserObject label="抄送人" plantUmlId="lane_85" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="抄送人" id="W4xpJ0Qu_Z-2tSzxhBI2-4">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
+            <mxGeometry height="1050" width="176" x="1586" y="230" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="查看经费详情：&#xa;1、经费实时数据（总额、&#xa;授权、支出、剩余等）&#xa;2、各部门申请统计&#xa;3、每笔申请详情" plantUmlId="action_22" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="查看经费详情：&#xa;1、经费实时数据（总额、&#xa;授权、支出、剩余等）&#xa;2、各部门申请统计&#xa;3、每笔申请详情" id="sFqfqWGMiwIP8Z_fvze0-238">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-220" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="91" width="160" x="5" y="610" as="geometry" />
+        <UserObject label="审批人" plantUmlId="lane_84" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="审批人" id="W4xpJ0Qu_Z-2tSzxhBI2-5">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
+            <mxGeometry height="1050" width="176" x="1410" y="230" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="发布经费项目：&#xa;1、项目内容&#xa;2、选择审批流程&#xa;" plantUmlId="action_24" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="发布经费项目：&#xa;1、项目内容&#xa;2、填报指南" id="sFqfqWGMiwIP8Z_fvze0-240">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-220" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="62" width="148" x="12" y="300" as="geometry" />
+        <UserObject label="申请人" plantUmlId="lane_83" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="申请人" id="W4xpJ0Qu_Z-2tSzxhBI2-6">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
+            <mxGeometry height="1050" width="176" x="1234" y="230" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" plantUmlId="e_23" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-239">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-220" source="sFqfqWGMiwIP8Z_fvze0-238" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-240">
+        <UserObject label="主管领导" plantUmlId="lane_82" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="主管领导" id="W4xpJ0Qu_Z-2tSzxhBI2-7">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
+            <mxGeometry height="1050" width="174" x="1060" y="230" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="查看所有项目的总额、剩余&#xa;经费等情况" plantUmlId="action_18" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="查看所有项目的总额、剩余&#xa;经费等情况" id="W4xpJ0Qu_Z-2tSzxhBI2-8">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-7" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="48" width="164" x="5" y="178" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="项目负责人" plantUmlId="lane_81" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="项目负责人" id="W4xpJ0Qu_Z-2tSzxhBI2-9">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
+            <mxGeometry height="1050" width="174" x="886" y="230" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="查看自己负责项目的总额、&#xa;剩余经费等情况" plantUmlId="action_14" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="查看自己负责项目的总额、&#xa;剩余经费等情况" id="W4xpJ0Qu_Z-2tSzxhBI2-10">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-9" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="48" width="164" x="5" y="180" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="科室负责人" plantUmlId="lane_80" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="科室负责人" id="W4xpJ0Qu_Z-2tSzxhBI2-11">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
+            <mxGeometry height="1050" width="170" x="716" y="230" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="查看经费详情：&#xa;1、经费实时数据（总额、&#xa;授权、支出、剩余等）&#xa;2、各部门申请统计&#xa;3、每笔申请详情" plantUmlId="action_22" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="查看经费详情：&#xa;1、经费实时数据（总额、&#xa;授权、支出、剩余等）&#xa;2、各部门申请统计&#xa;3、每笔申请详情" id="W4xpJ0Qu_Z-2tSzxhBI2-12">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-11" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="91" width="160" x="6" y="660" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="发布经费项目：&#xa;1、项目内容&#xa;2、选择审批流程&#xa;" plantUmlId="action_24" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="发布经费项目：&#xa;1、项目内容&#xa;2、填报指南" id="W4xpJ0Qu_Z-2tSzxhBI2-13">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-11" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="70" width="148" x="12" y="300" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_23" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-14">
+          <mxCell edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-11" source="W4xpJ0Qu_Z-2tSzxhBI2-12" style="endArrow=none;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=classic;startFill=1;endFill=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-13">
             <mxGeometry relative="1" as="geometry">
               <mxPoint x="86" y="502" as="sourcePoint" />
               <mxPoint x="86" y="522" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="项目负责人" plantUmlId="lane_81" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="项目负责人" id="sFqfqWGMiwIP8Z_fvze0-221">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
-            <mxGeometry height="1379" width="174" x="476" y="30" as="geometry" />
+        <UserObject label="审核报销" plantUmlId="action_75" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="审核报销" id="W4xpJ0Qu_Z-2tSzxhBI2-15">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-11" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="34" width="152" x="10" y="891" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="查看自己负责项目的总额、&#xa;剩余经费等情况" plantUmlId="action_14" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="查看自己负责项目的总额、&#xa;剩余经费等情况" id="sFqfqWGMiwIP8Z_fvze0-234">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-221" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="48" width="164" x="5" y="180" as="geometry" />
+        <UserObject label="" plantUmlId="start_0" plantUmlBaseStyle="ellipse;fillColor=#222222;strokeColor=#222222;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-16">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="ellipse;fillColor=#222222;strokeColor=#222222;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" vertex="1">
+            <mxGeometry height="20" width="20" x="620" y="260" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="主管领导" plantUmlId="lane_82" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="主管领导" id="sFqfqWGMiwIP8Z_fvze0-222">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
-            <mxGeometry height="1379" width="174" x="650" y="30" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="查看所有项目的总额、剩余&#xa;经费等情况" plantUmlId="action_18" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="查看所有项目的总额、剩余&#xa;经费等情况" id="sFqfqWGMiwIP8Z_fvze0-236">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-222" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="48" width="164" x="5" y="178" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="申请人" plantUmlId="lane_83" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="申请人" id="sFqfqWGMiwIP8Z_fvze0-223">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
-            <mxGeometry height="1379" width="176" x="824" y="30" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="审批人" plantUmlId="lane_84" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="审批人" id="sFqfqWGMiwIP8Z_fvze0-224">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
-            <mxGeometry height="1379" width="176" x="1000" y="30" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="抄送人" plantUmlId="lane_85" plantUmlBaseStyle="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="抄送人" id="sFqfqWGMiwIP8Z_fvze0-225">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="swimlane;collapsible=0;startSize=30;fillColor=#F5F5F5;swimlaneFillColor=#F5F5F5;strokeColor=#999999;strokeWidth=1.5;fontColor=#000000;fontSize=18;fontStyle=0;html=1;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=center;" vertex="1">
-            <mxGeometry height="1379" width="176" x="1176" y="30" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="start_0" plantUmlBaseStyle="ellipse;fillColor=#222222;strokeColor=#222222;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-226">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="ellipse;fillColor=#222222;strokeColor=#222222;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" vertex="1">
-            <mxGeometry height="20" width="20" x="210" y="60" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="e_1" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-227">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-226" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-228">
+        <UserObject label="" plantUmlId="e_1" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-17">
+          <mxCell edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-16" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-18">
             <mxGeometry relative="1" as="geometry">
-              <mxPoint x="220" y="80" as="sourcePoint" />
-              <mxPoint x="220" y="100" as="targetPoint" />
+              <mxPoint x="630" y="280" as="sourcePoint" />
+              <mxPoint x="630" y="300" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="授权经费管理给科室负责人" plantUmlId="action_2" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="授权经费管理给科室负责人" id="sFqfqWGMiwIP8Z_fvze0-228">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="34" width="164" x="138" y="100" as="geometry" />
+        <UserObject label="授权经费管理给科室负责人" plantUmlId="action_2" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="授权经费管理给科室负责人" id="W4xpJ0Qu_Z-2tSzxhBI2-18">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="34" width="164" x="548" y="300" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" plantUmlId="e_3" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-229">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-228" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-230">
+        <UserObject label="" plantUmlId="e_3" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-19">
+          <mxCell edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-18" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-20">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="220" y="139" />
-                <mxPoint x="82" y="139" />
+                <mxPoint x="630" y="339" />
+                <mxPoint x="492" y="339" />
               </Array>
-              <mxPoint x="220" y="134" as="sourcePoint" />
-              <mxPoint x="82" y="154" as="targetPoint" />
+              <mxPoint x="630" y="334" as="sourcePoint" />
+              <mxPoint x="492" y="354" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="二次验证授权" plantUmlId="action_6" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="二次验证授权" id="sFqfqWGMiwIP8Z_fvze0-230">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="34" width="92" x="36" y="154" as="geometry" />
+        <UserObject label="二次验证授权" plantUmlId="action_6" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="二次验证授权" id="W4xpJ0Qu_Z-2tSzxhBI2-20">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="34" width="92" x="446" y="354" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" plantUmlId="e_7" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-231">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-230" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="sFqfqWGMiwIP8Z_fvze0-232">
+        <UserObject label="" plantUmlId="e_7" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-21">
+          <mxCell edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-20" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-24">
             <mxGeometry relative="1" x="-0.1878" as="geometry">
               <Array as="points">
-                <mxPoint x="82" y="193" />
-                <mxPoint x="82" y="246.5" />
-                <mxPoint x="220" y="246.5" />
+                <mxPoint x="492" y="393" />
+                <mxPoint x="492" y="446.5" />
+                <mxPoint x="630" y="446.5" />
               </Array>
-              <mxPoint x="82" y="188" as="sourcePoint" />
-              <mxPoint x="392" y="208" as="targetPoint" />
+              <mxPoint x="492" y="388" as="sourcePoint" />
+              <mxPoint x="802" y="408" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <mxCell id="sFqfqWGMiwIP8Z_fvze0-272" edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-232" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="sFqfqWGMiwIP8Z_fvze0-234">
+        <mxCell id="W4xpJ0Qu_Z-2tSzxhBI2-22" edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-10">
           <mxGeometry relative="1" x="0.169" as="geometry" />
         </mxCell>
-        <mxCell id="sFqfqWGMiwIP8Z_fvze0-275" edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-232" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;" target="sFqfqWGMiwIP8Z_fvze0-236">
+        <mxCell id="W4xpJ0Qu_Z-2tSzxhBI2-23" edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;" target="W4xpJ0Qu_Z-2tSzxhBI2-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="基础设置：&#xa;1、设置项目类型、分类&#xa;2、设置经费用途&#xa;3、设置审批流程" plantUmlId="action_10" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="基础设置：&#xa;1、设置项目类型、分类&#xa;2、设置经费用途&#xa;3、设置审批流程" id="sFqfqWGMiwIP8Z_fvze0-232">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="77" width="148" x="318" y="208" as="geometry" />
+        <UserObject label="基础设置：&#xa;1、设置项目类型、分类&#xa;2、设置经费用途&#xa;3、设置审批流程" plantUmlId="action_10" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="基础设置：&#xa;1、设置项目类型、分类&#xa;2、设置经费用途&#xa;3、设置审批流程" id="W4xpJ0Qu_Z-2tSzxhBI2-24">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="77" width="148" x="728" y="408" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" plantUmlId="e_11" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-233">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-232" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sFqfqWGMiwIP8Z_fvze0-240">
+        <UserObject label="" plantUmlId="e_11" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-25">
+          <mxCell edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-24" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-13">
             <mxGeometry relative="1" x="-0.5347" as="geometry">
               <Array as="points">
-                <mxPoint x="392" y="290" />
+                <mxPoint x="802" y="490" />
               </Array>
-              <mxPoint x="392" y="285" as="sourcePoint" />
-              <mxPoint x="564" y="305" as="targetPoint" />
+              <mxPoint x="802" y="485" as="sourcePoint" />
+              <mxPoint x="974" y="505" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="" plantUmlId="e_25" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-241">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-240" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-242">
+        <UserObject label="查看所在部门可申请的经费&#xa;项目（手机、pc）" plantUmlId="action_28" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="查看所在部门可申请的经费&#xa;项目（手机、pc）" id="W4xpJ0Qu_Z-2tSzxhBI2-26">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="48" width="164" x="1241" y="594" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_29" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-27">
+          <mxCell edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-26" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-29">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="1323" y="662" as="sourcePoint" />
+              <mxPoint x="1323" y="682" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="W4xpJ0Qu_Z-2tSzxhBI2-28" edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;" target="W4xpJ0Qu_Z-2tSzxhBI2-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="发起经费申请（手机、pc）" plantUmlId="action_30" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="发起经费申请（手机、pc）" id="W4xpJ0Qu_Z-2tSzxhBI2-29">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="34" width="166" x="1240" y="662" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="收到待审提醒（手机）" plantUmlId="action_34" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="收到待审提醒（手机）" id="W4xpJ0Qu_Z-2tSzxhBI2-30">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="34" width="140" x="1429" y="726" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_35" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-31">
+          <mxCell edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-30" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-32">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="1499" y="770" as="sourcePoint" />
+              <mxPoint x="1499" y="790" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="审批经费申请（手机、pc）&#xa;支持上级审批、项目负责人&#xa;审批、职位审批、跨校审批&#xa;等，可按申请金额做条件审&#xa;批" plantUmlId="action_36" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="审批经费申请（手机、pc）&#xa;支持上级审批、项目负责人&#xa;审批、职位审批、跨校审批&#xa;等，可按申请金额做条件审&#xa;批" id="W4xpJ0Qu_Z-2tSzxhBI2-32">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="91" width="166" x="1416" y="790" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_37" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-33">
+          <mxCell edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-32" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-34">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="1499" y="881" as="sourcePoint" />
+              <mxPoint x="1499" y="901" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="forkbar_39" plantUmlBaseStyle="shape=rectangle;fillColor=#555555;strokeColor=#555555;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-34">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="shape=rectangle;fillColor=#555555;strokeColor=#555555;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" vertex="1">
+            <mxGeometry height="6" width="80" x="1459" y="901" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_40" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;exitX=0.075;exitY=1;exitDx=0;exitDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-35">
+          <mxCell edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-34" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;exitX=0.075;exitY=1;exitDx=0;exitDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-37">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="392" y="619" />
-                <mxPoint x="913" y="619" />
+                <mxPoint x="1465" y="912" />
+                <mxPoint x="1323" y="912" />
               </Array>
-              <mxPoint x="392" y="614" as="sourcePoint" />
-              <mxPoint x="913" y="634" as="targetPoint" />
+              <mxPoint x="1465" y="907" as="sourcePoint" />
+              <mxPoint x="1323" y="927" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="查看所在部门可申请的经费&#xa;项目（手机、pc）" plantUmlId="action_28" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="查看所在部门可申请的经费&#xa;项目（手机、pc）" id="sFqfqWGMiwIP8Z_fvze0-242">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="48" width="164" x="831" y="634" as="geometry" />
+        <mxCell id="W4xpJ0Qu_Z-2tSzxhBI2-36" edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=gap;" target="W4xpJ0Qu_Z-2tSzxhBI2-44" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="审批完结信息提醒（手机）" plantUmlId="action_44" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="审批完结信息提醒（手机）" id="W4xpJ0Qu_Z-2tSzxhBI2-37">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="34" width="164" x="1241" y="927" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" plantUmlId="e_29" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-243">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-242" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-244">
-            <mxGeometry relative="1" as="geometry">
-              <mxPoint x="913" y="682" as="sourcePoint" />
-              <mxPoint x="913" y="702" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="发起经费申请（手机、pc）" plantUmlId="action_30" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="发起经费申请（手机、pc）" id="sFqfqWGMiwIP8Z_fvze0-244">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="34" width="166" x="830" y="702" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="e_31" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-245">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-244" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-246">
+        <UserObject label="" plantUmlId="e_50" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;exitX=0.925;exitY=1;exitDx=0;exitDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-38">
+          <mxCell edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-34" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;exitX=0.925;exitY=1;exitDx=0;exitDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-39">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="913" y="741" />
-                <mxPoint x="1089" y="741" />
+                <mxPoint x="1533" y="912" />
+                <mxPoint x="1675" y="912" />
               </Array>
-              <mxPoint x="913" y="736" as="sourcePoint" />
-              <mxPoint x="1089" y="756" as="targetPoint" />
+              <mxPoint x="1533" y="907" as="sourcePoint" />
+              <mxPoint x="1675" y="956" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="收到待审提醒（手机）" plantUmlId="action_34" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="收到待审提醒（手机）" id="sFqfqWGMiwIP8Z_fvze0-246">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="34" width="140" x="1019" y="756" as="geometry" />
+        <UserObject label="抄送信息提醒（手机）" plantUmlId="action_54" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="抄送信息提醒（手机）" id="W4xpJ0Qu_Z-2tSzxhBI2-39">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="34" width="140" x="1605" y="956" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" plantUmlId="e_35" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-247">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-246" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-248">
+        <UserObject label="查看申请详情（手机、pc）" plantUmlId="action_55" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="查看申请详情（手机、pc）" id="W4xpJ0Qu_Z-2tSzxhBI2-40">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="34" width="166" x="1592" y="1025" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_56" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-41">
+          <mxCell edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-39" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-40">
             <mxGeometry relative="1" as="geometry">
-              <mxPoint x="1089" y="790" as="sourcePoint" />
-              <mxPoint x="1089" y="810" as="targetPoint" />
+              <mxPoint x="1675" y="990" as="sourcePoint" />
+              <mxPoint x="1675" y="1025" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="审批经费申请（手机、pc）&#xa;支持上级审批、项目负责人&#xa;审批、职位审批、跨校审批&#xa;等，可按申请金额做条件审&#xa;批" plantUmlId="action_36" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="审批经费申请（手机、pc）&#xa;支持上级审批、项目负责人&#xa;审批、职位审批、跨校审批&#xa;等，可按申请金额做条件审&#xa;批" id="sFqfqWGMiwIP8Z_fvze0-248">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="91" width="166" x="1006" y="810" as="geometry" />
+        <mxCell id="W4xpJ0Qu_Z-2tSzxhBI2-42" edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;" target="W4xpJ0Qu_Z-2tSzxhBI2-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="催办报错（系统、手动）" plantUmlId="action_65" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="催办报错（系统、手动）" id="W4xpJ0Qu_Z-2tSzxhBI2-43">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="34" width="152" x="726" y="1023" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" plantUmlId="e_37" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-249">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-248" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-250">
+        <UserObject label="收到报销提醒（手机）" plantUmlId="action_69" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="收到报销提醒（手机）" id="W4xpJ0Qu_Z-2tSzxhBI2-44">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="34" width="140" x="1253" y="1023" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_70" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="W4xpJ0Qu_Z-2tSzxhBI2-45">
+          <mxCell edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-44" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="W4xpJ0Qu_Z-2tSzxhBI2-47">
             <mxGeometry relative="1" as="geometry">
-              <mxPoint x="1089" y="901" as="sourcePoint" />
-              <mxPoint x="1089" y="921" as="targetPoint" />
+              <mxPoint x="1323" y="1221" as="sourcePoint" />
+              <mxPoint x="1323" y="1241" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="" plantUmlId="forkbar_39" plantUmlBaseStyle="shape=rectangle;fillColor=#555555;strokeColor=#555555;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-250">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="shape=rectangle;fillColor=#555555;strokeColor=#555555;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" vertex="1">
-            <mxGeometry height="6" width="80" x="1049" y="921" as="geometry" />
+        <mxCell id="W4xpJ0Qu_Z-2tSzxhBI2-46" edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=gap;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="1138" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="经费报销（手机、pc）" plantUmlId="action_71" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="经费报销（手机、pc）" id="W4xpJ0Qu_Z-2tSzxhBI2-47">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="34" width="142" x="1252" y="1121" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="" plantUmlId="e_40" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;exitX=0.075;exitY=1;exitDx=0;exitDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-251">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-250" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;exitX=0.075;exitY=1;exitDx=0;exitDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-252">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points">
-                <mxPoint x="1055" y="932" />
-                <mxPoint x="913" y="932" />
-              </Array>
-              <mxPoint x="1055" y="927" as="sourcePoint" />
-              <mxPoint x="913" y="947" as="targetPoint" />
-            </mxGeometry>
+        <UserObject label="下拨年度项目统计列表" plantUmlId="action_77" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="下拨年度项目统计列表" id="W4xpJ0Qu_Z-2tSzxhBI2-48">
+          <mxCell parent="W4xpJ0Qu_Z-2tSzxhBI2-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
+            <mxGeometry height="34" width="140" x="732" y="1209" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="审批完结信息提醒（手机）" plantUmlId="action_44" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="审批完结信息提醒（手机）" id="sFqfqWGMiwIP8Z_fvze0-252">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="34" width="164" x="831" y="947" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="查看经费详情：&#xa;1、经费实时数据（总额、&#xa;授权、支出、剩余等）&#xa;2、各部门申请统计&#xa;3、每笔申请详情" plantUmlId="action_46" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="查看经费详情：&#xa;1、经费实时数据（总额、&#xa;授权、支出、剩余等）&#xa;2、各部门申请统计&#xa;3、每笔申请详情" id="sFqfqWGMiwIP8Z_fvze0-253">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="91" width="160" x="312" y="1016" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="e_47" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-254">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-252" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-253">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points">
-                <mxPoint x="913" y="1001" />
-                <mxPoint x="392" y="1001" />
-              </Array>
-              <mxPoint x="913" y="981" as="sourcePoint" />
-              <mxPoint x="392" y="1016" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="e_50" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;exitX=0.925;exitY=1;exitDx=0;exitDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-255">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-250" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;exitX=0.925;exitY=1;exitDx=0;exitDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-256">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points">
-                <mxPoint x="1123" y="932" />
-                <mxPoint x="1265" y="932" />
-              </Array>
-              <mxPoint x="1123" y="927" as="sourcePoint" />
-              <mxPoint x="1265" y="976" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="抄送信息提醒（手机）" plantUmlId="action_54" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="抄送信息提醒（手机）" id="sFqfqWGMiwIP8Z_fvze0-256">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="34" width="140" x="1195" y="976" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="查看申请详情（手机、pc）" plantUmlId="action_55" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="查看申请详情（手机、pc）" id="sFqfqWGMiwIP8Z_fvze0-257">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="34" width="166" x="1182" y="1045" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="e_56" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-258">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-256" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-257">
-            <mxGeometry relative="1" as="geometry">
-              <mxPoint x="1265" y="1010" as="sourcePoint" />
-              <mxPoint x="1265" y="1045" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="e_57" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;entryX=0.075;entryY=0;entryDx=0;entryDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-259">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-253" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;entryX=0.075;entryY=0;entryDx=0;entryDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-261">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points">
-                <mxPoint x="392" y="1112" />
-                <mxPoint x="1231" y="1112" />
-              </Array>
-              <mxPoint x="392" y="1107" as="sourcePoint" />
-              <mxPoint x="1231" y="1127" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="e_60" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-260">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-257" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-261">
-            <mxGeometry relative="1" as="geometry">
-              <mxPoint x="1265" y="1079" as="sourcePoint" />
-              <mxPoint x="1265" y="1127" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="joinbar_61" plantUmlBaseStyle="shape=rectangle;fillColor=#555555;strokeColor=#555555;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-261">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="shape=rectangle;fillColor=#555555;strokeColor=#555555;shadow=0;fontFamily=Microsoft YaHei, sans-serif;align=left;" vertex="1">
-            <mxGeometry height="6" width="80" x="1225" y="1127" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="e_62" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;exitX=0.5;exitY=1;exitDx=0;exitDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-262">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-261" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;exitX=0.5;exitY=1;exitDx=0;exitDy=0;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-263">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points">
-                <mxPoint x="1265" y="1138" />
-                <mxPoint x="392" y="1138" />
-              </Array>
-              <mxPoint x="1265" y="1133" as="sourcePoint" />
-              <mxPoint x="392" y="1153" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="催办报错（系统、手动）" plantUmlId="action_65" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="催办报错（系统、手动）" id="sFqfqWGMiwIP8Z_fvze0-263">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="34" width="152" x="316" y="1153" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="e_66" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-264">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-263" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-265">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points">
-                <mxPoint x="392" y="1192" />
-                <mxPoint x="913" y="1192" />
-              </Array>
-              <mxPoint x="392" y="1187" as="sourcePoint" />
-              <mxPoint x="913" y="1207" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="收到报销提醒（手机）" plantUmlId="action_69" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="收到报销提醒（手机）" id="sFqfqWGMiwIP8Z_fvze0-265">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="34" width="140" x="843" y="1207" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="e_70" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-266">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-265" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-267">
-            <mxGeometry relative="1" as="geometry">
-              <mxPoint x="913" y="1241" as="sourcePoint" />
-              <mxPoint x="913" y="1261" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="经费报销（手机、pc）" plantUmlId="action_71" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="经费报销（手机、pc）" id="sFqfqWGMiwIP8Z_fvze0-267">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="34" width="142" x="842" y="1261" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="e_72" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-268">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-267" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-269">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points">
-                <mxPoint x="913" y="1300" />
-                <mxPoint x="392" y="1300" />
-              </Array>
-              <mxPoint x="913" y="1295" as="sourcePoint" />
-              <mxPoint x="392" y="1315" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="审核报销" plantUmlId="action_75" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="审核报销" id="sFqfqWGMiwIP8Z_fvze0-269">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="34" width="68" x="358" y="1315" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" plantUmlId="e_76" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="sFqfqWGMiwIP8Z_fvze0-270">
-          <mxCell edge="1" parent="sFqfqWGMiwIP8Z_fvze0-217" source="sFqfqWGMiwIP8Z_fvze0-269" style="endArrow=classic;endSize=8;strokeColor=#181818;dashed=0;fontFamily=Microsoft YaHei, sans-serif;align=left;curved=0;rounded=0;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="sFqfqWGMiwIP8Z_fvze0-271">
-            <mxGeometry relative="1" as="geometry">
-              <mxPoint x="392" y="1349" as="sourcePoint" />
-              <mxPoint x="392" y="1369" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="下拨年度项目统计列表" plantUmlId="action_77" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" plantUmlBaseValue="下拨年度项目统计列表" id="sFqfqWGMiwIP8Z_fvze0-271">
-          <mxCell parent="sFqfqWGMiwIP8Z_fvze0-217" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=8;shadow=0;fontFamily=Microsoft YaHei, sans-serif;" vertex="1">
-            <mxGeometry height="34" width="140" x="322" y="1369" as="geometry" />
-          </mxCell>
-        </UserObject>
+        <mxCell id="W4xpJ0Qu_Z-2tSzxhBI2-49" edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=gap;" target="W4xpJ0Qu_Z-2tSzxhBI2-43" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4xpJ0Qu_Z-2tSzxhBI2-50" edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;" target="W4xpJ0Qu_Z-2tSzxhBI2-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4xpJ0Qu_Z-2tSzxhBI2-51" edge="1" parent="W4xpJ0Qu_Z-2tSzxhBI2-1" source="W4xpJ0Qu_Z-2tSzxhBI2-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=gap;" target="W4xpJ0Qu_Z-2tSzxhBI2-48" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
